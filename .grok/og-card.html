@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Noto+Serif+KR:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #F3F1EC;
+        color: #161513;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .sheet {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background:
+          radial-gradient(ellipse 78% 62% at 50% 48%, #F3F1EC 0%, rgba(243, 241, 236, 0.55) 54%, transparent 74%),
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 27px,
+            rgba(22, 21, 19, 0.05) 27px,
+            rgba(22, 21, 19, 0.05) 28px
+          ),
+          radial-gradient(1200px 630px at 50% 42%, #FBFAF6 0%, #F3F1EC 72%, #EBE7DE 100%);
+      }
+      .grain {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.12;
+        mix-blend-mode: multiply;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+      }
+      .frame {
+        position: absolute;
+        inset: 38px;
+        border: 1.5px solid rgba(22, 21, 19, 0.28);
+        pointer-events: none;
+      }
+      .frame::after {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        border: 2px solid rgba(47, 93, 69, 0.55);
+      }
+      .lockup {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 72px 140px;
+        z-index: 2;
+      }
+      .seal {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 28px;
+      }
+      .wordmark {
+        font-family: "Newsreader", "Source Serif 4", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 108px;
+        letter-spacing: -0.025em;
+        line-height: 0.92;
+        color: #161513;
+      }
+      .tag {
+        margin-top: 22px;
+        font-family: "Noto Serif KR", "Newsreader", serif;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 1.35;
+        letter-spacing: -0.01em;
+        color: #2C4A5E;
+      }
+      .rule {
+        width: 56px;
+        height: 2px;
+        margin-top: 30px;
+        background: #2F5D45;
+      }
+      .marks {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 48px;
+        margin-top: 26px;
+      }
+      .mark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        min-width: 88px;
+      }
+      .glyph {
+        width: 28px;
+        height: 28px;
+      }
+      .caption {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #6e6a64;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sheet">
+      <div class="grain"></div>
+      <div class="frame"></div>
+      <div class="lockup">
+        <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#2F5D45" />
+          <path
+            fill="none"
+            stroke="#F3F1EC"
+            stroke-width="2.6"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="2.2"
+            d="M8 9.5 L12.2 22.8 L16 13.1 L19.8 22.8 L24 9.5"
+          />
+        </svg>
+        <div class="wordmark">Warrant</div>
+        <div class="tag">무엇을 믿고, 무엇을 다시 확인할지</div>
+        <div class="rule"></div>
+        <div class="marks">
+          <div class="mark">
+            <svg class="glyph" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" fill="none" stroke="#2F5D45" stroke-width="1.4" />
+              <path d="M8 14.2 L12.2 18.4 L20.2 9.8" fill="none" stroke="#2F5D45" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" />
+            </svg>
+            <span class="caption">Verified</span>
+          </div>
+          <div class="mark">
+            <svg class="glyph" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" fill="none" stroke="#2C4A5E" stroke-width="1.4" />
+              <circle cx="14" cy="14" r="4.2" fill="none" stroke="#2C4A5E" stroke-width="1.6" />
+            </svg>
+            <span class="caption">Recheck</span>
+          </div>
+          <div class="mark">
+            <svg class="glyph" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" fill="none" stroke="#161513" stroke-width="1.4" />
+              <path d="M9 9 L19 19" fill="none" stroke="#161513" stroke-width="2" stroke-linecap="square" />
+            </svg>
+            <span class="caption">Discard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

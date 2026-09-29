@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Warrant",
+      "hasCanvas": false,
+      "bodyTextLen": 727,
+      "bodyTextHash": "79bff384db0a3b34ab5a11bc720e76ea0b6a2b0400ed81e8afb3ec06966dd7b5",
+      "bodyTextPrefix": "본문으로 Warrant 한강법률 리서치 데스크 데스크 재확인 큐 새 검증 로드맵 김서연 시니어 어소시에이트 증거 상",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Warrant",
+      "hasCanvas": false,
+      "bodyTextLen": 704,
+      "bodyTextHash": "a01a86479300e589a26c915f06c0b39f895885197247ea73955bc124d8db532e",
+      "bodyTextPrefix": "본문으로 Warrant 한강법률 증거 상태 데스크 무엇을 믿고, 무엇을 다시 확인할지 AI가 붙인 인용이 아니라, ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

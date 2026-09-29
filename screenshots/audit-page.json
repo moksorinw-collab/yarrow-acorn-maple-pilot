@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/audits/aud-52h",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Warrant",
+      "hasCanvas": false,
+      "bodyTextLen": 1242,
+      "bodyTextHash": "a35b231686f6fc30ac5c43f8c6dbb40f69c8f288fcef70226beb50a8918a4e57",
+      "bodyTextPrefix": "본문으로 Warrant 한강법률 리서치 데스크 데스크 재확인 큐 새 검증 로드맵 김서연 시니어 어소시에이트 데스크 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/audit-page.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Warrant",
+      "hasCanvas": false,
+      "bodyTextLen": 1219,
+      "bodyTextHash": "69bbd4aca8ed7fd5e570c9341206a65e6434db2e9f7fcea7226f62493ed8d5ae",
+      "bodyTextPrefix": "본문으로 Warrant 한강법률 데스크 법률 · ChatGPT · 고객 송부 예정 메모 주 52시간제 예외 적용 범",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/audit-page-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/audit-page.json"
+}
